@@ -1,0 +1,77 @@
+{% extends "_layout.twig" %}
+
+{% block title %}Home{% endblock %}
+
+	{% block content %}
+    <script type="text/javascript">
+		function signUp()
+		{
+			window.location = "/Login/New.aspx";
+		}
+    </script>
+	<div style="width: 400px" align="center">
+        <br>
+        <p>
+            You need an account to play ROBLOX. If you aren't a ROBLOX member then
+            <input type="button" value="Sign Up!" onclick="signUp(); return false" class="SignUpButton">
+            &nbsp;It's easy and we do <em>not</em> share your personal information with anybody.
+        </p>
+    </div>
+    <p>
+    </p>
+    
+<table id="Table1">
+	<tbody><tr>
+		<td>Username or E-mail:</td>
+		<td width="140">
+			<input name="_ctl0:ContentPlaceHolder1:Login1:UserName" type="text" id="_ctl0_ContentPlaceHolder1_Login1_UserName"></td>
+		<td>
+			
+			</td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td width="140">
+			<input name="_ctl0:ContentPlaceHolder1:Login1:UserPass" type="password" id="_ctl0_ContentPlaceHolder1_Login1_UserPass"></td>
+		<td>
+			
+			</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td width="140">
+			</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+	<tr>
+	<td></td>
+		<td colspan="1" nowrap="" align="center">
+			<input type="submit" name="_ctl0:ContentPlaceHolder1:Login1:LoginBtn" value="Log In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;_ctl0:ContentPlaceHolder1:Login1:LoginBtn&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" language="javascript" id="_ctl0_ContentPlaceHolder1_Login1_LoginBtn" class="LogInButton">&nbsp;
+			<input type="submit" name="_ctl0:ContentPlaceHolder1:Login1:Button1" value="Sign Up!" id="_ctl0_ContentPlaceHolder1_Login1_Button1" class="SignUpButton"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td width="140">
+			<a id="_ctl0_ContentPlaceHolder1_Login1_LinkButtonResetPassword" href="javascript:__doPostBack('_ctl0$ContentPlaceHolder1$Login1$LinkButtonResetPassword','')">Reset password</a></td>
+		<td>
+			
+			<input name="_ctl0:ContentPlaceHolder1:Login1:hiddenEmail" type="hidden" id="_ctl0_ContentPlaceHolder1_Login1_hiddenEmail" value="An email with instructions has been sent to {0}"></td>
+	</tr>
+</tbody></table>
+<script for="window" event="onload">
+aspnetForm._ctl0_ContentPlaceHolder1_Login1_UserName.focus();
+</script>
+
+    <br>
+	{% endblock %}

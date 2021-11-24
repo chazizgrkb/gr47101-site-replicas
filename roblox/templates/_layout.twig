@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	ROBLOX
+</title><link href="/Roblox.css" type="text/css" rel="stylesheet"></head>
+<body style="margin-top: 0">
+        <div align="center">
+            <table width="800" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                    <td style="clear: none; border-right: black 1px solid; border-left: black 1px solid" class="Header" align="center">
+                        <div id="_ctl0_Panel2" class="Banner">
+	
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tbody><tr>
+                                    <td width="250" valign="bottom" align="left"><a id="_ctl0_HyperLink2" class="BannerText" href="../Default.aspx">ROBLOX.com (Alpha-test)</a></td>
+                                    <td width="300" align="center"><a id="_ctl0_Image2" title="ROBLOX Logo" href="../Default.aspx" blankurl="/Thumbs/Blank.ashx?x=311&amp;y=45" style="cursor:hand;"><img src="/images/roblox_logo.PNG" border=0></a></td>
+                                    <td width="250" align="right">
+									{% if not logged_in %}
+                                        <span id="_ctl0_SpanSignUp" class="BannerText"><a id="_ctl0_HyperlinkSignUp" class="BannerText" href="../Login?ReturnUrl=http%3a%2f%2fwww.roblox.com%2fdefault.aspx">Sign Up</a></span>
+                                    {% else %}
+										<span class="BannerText">Welcome, {{current_user.name}}</span><br><br>
+										<span class="BannerText"><a href="Logout.aspx" class="BannerText">Log out</a></span>
+									{% endif %}
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        
+</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-right: black 1px solid; padding-right: 8px; padding-left: 8px;
+                        padding-bottom: 0px; border-left: black 1px solid; padding-top: 0px; border-bottom: black 1px solid;
+                        background-color: lightsteelblue" align="center">
+                        <span class="MenuItem">
+                            <a id="_ctl0_HyperlinkHome" class="MenuItem" href="../User.aspx">Home</a>&nbsp;|
+                            <a id="_ctl0_HyperLink3" class="MenuItem" href="../MP/Default.aspx">Games</a>
+                            |&nbsp;<a id="_ctl0_HyperLink10" class="MenuItem" href="../Browse/Places.aspx">Browse</a>&nbsp;|
+                            <a id="_ctl0_HyperLink11" class="MenuItem" href="../Forum/">Forum</a>&nbsp;|&nbsp;<a id="_ctl0_Hyperlink1" class="MenuItem" href="http://www.robloxwiki.com">Info</a>
+                            
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 16px">
+                        <div style="text-align: center">
+                            <p></p>
+                                	{% block content %}{% endblock %}
+					                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left: 8px; padding-top: 12px">
+                        
+<hr>
+<div class="Legal" style="TEXT-ALIGN: center">ROBLOX, "Online Building Toy", 
+	characters, logos, names and all related indicia are trademarks of
+	<a id="_ctl0_MasterFooter_HyperLink2" class="Legal" href="../info/About.aspx">ROBLOX Corporation</a>, 
+	©
+	2006
+	. Patents pending.
+	<br>
+	<a id="_ctl0_MasterFooter_HyperLink3" class="Legal" href="../info/Privacy.aspx">Privacy Policy</a>&nbsp;|
+	<a href="mailto:info@roblox.com" class="Legal">Contact Us</a>&nbsp;|
+	<a id="_ctl0_MasterFooter_HyperLink5" class="Legal" href="../info/About.aspx">About Us</a><br>
+	Use of this site signifies your acceptance of the
+	<a id="_ctl0_MasterFooter_HyperLink1" class="Legal" href="../info/TermsOfService.aspx">Terms and Conditions</a></div>
+
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct="UA-486632-1"; urchinTracker(); __utmSetVar('Visitor/Anonymous');</script>
+        
+    
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ZmUkODs8xKBrzN9gukIgDk+W16cbDXkb0cBG9HDzw1kqUXnJfjdZLR8U94s2eks0fQ4vwLKUBLDePSFCP9Qelg==">
+<script language="javascript" type="text/javascript">window.document.body.topMargin = 0;</script>
+
+
+</body></html>

@@ -1,0 +1,84 @@
+{% extends "_layout.twig" %}
+
+{% block title %}Home{% endblock %}
+
+	{% block content %}
+<p id="_ctl0_SystemRequirements1_OS" style="COLOR: red" align="center">
+	Currently, ROBLOX is only available on PCs running the Windows operating system</p>
+
+	<form method="post" name="loginForm" id="loginForm" action="../Register.aspx">
+			<table width="100%">
+				<tbody><tr>
+					<td nowrap="">Username:</td>
+					<td style="WIDTH: 143px">
+						<input name="_ctl0:UserName" type="text" id="_ctl0_UserName" tabindex="1">
+					</td>
+					<td>
+						
+						
+						
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td nowrap="">
+						Password:</td>
+					<td style="WIDTH: 143px">
+						<input name="_ctl0:UserPass" type="password" id="_ctl0_UserPass" tabindex="2" designtimedragdrop="22">
+					</td>
+					<td>
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td nowrap="">Confirm Password:</td>
+					<td style="WIDTH: 143px">
+						<input name="_ctl0:TextBoxPasswordConfirm" type="password" id="_ctl0_TextBoxPasswordConfirm" tabindex="2"></td>
+					<td>
+						
+						</td>
+				</tr>
+				<tr>
+					<td nowrap="">E-mail:</td>
+					<td style="WIDTH: 143px">
+						<input name="_ctl0:TextBoxEMail" type="text" id="_ctl0_TextBoxEMail" tabindex="2"></td>
+					<td>
+						
+						
+						&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr width="100%">
+					<td></td>
+					<td colspan="2" width="500">
+						<p>To become a member, you must accept and agree to our
+							<a id="_ctl0_HyperLinkToS" href="javascript:readToS()"><u>Terms of Service</u></a>&nbsp;and 
+							our
+							<a id="_ctl0_HyperLinkEULA" href="javascript:readEULA()"><u>Licensing Agreement</u></a>:</p>
+						<div align="left">
+							<span id="_ctl0_RadioButtonToS" style="display:inline-block;"><input id="_ctl0_RadioButtonToS_0" type="radio" name="_ctl0:RadioButtonToS" value="Decline"><label for="_ctl0_RadioButtonToS_0">I Decline</label><input id="_ctl0_RadioButtonToS_1" type="radio" name="_ctl0:RadioButtonToS" value="Accept"><label for="_ctl0_RadioButtonToS_1">I Accept and Agree</label></span></div>
+						<p>Read our <a href="javascript:readPrivacy()">Privacy Policy</a></p>
+						<p align="right">
+							&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td colspan="2">
+						<input type="submit" name="register" value="Create account and log in"></td>
+				</tr>
+			</tbody></table>
+			<br>
+	</form>
+	{% endblock %}

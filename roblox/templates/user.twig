@@ -1,0 +1,62 @@
+{% extends "_layout.twig" %}
+
+{% block title %}Home{% endblock %}
+
+	{% block content %}
+<table width="100%" cellspacing="16">
+        <tbody><tr valign="top">
+            <td style="width: 40%">
+                
+<table style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid" width="100%" cellspacing="0" cellpadding="6" bgcolor="lightsteelblue">
+	<tbody><tr>
+		<td><span id="_ctl0_ContentPlaceHolder1_User1_LabelUserName" class="Title">{{ user.name }}</span></td>
+	</tr>
+	<tr>
+		<td>
+			<div style="LEFT: 0px; FLOAT: left; POSITION: relative; TOP: 0px">
+				<a id="_ctl0_ContentPlaceHolder1_User1_ContentImage1" title="Figure7" onclick="javascript:__doPostBack('_ctl0$ContentPlaceHolder1$User1$ContentImage1','')" blankurl="/Thumbs/Blank.ashx?x=180&amp;y=220" imageurl="/Thumbs/Model.ashx?x=180&amp;y=220&amp;id=1610&amp;format=Png" style="display:inline-block;BEHAVIOR:url(/web/20060622183736im_/http://roblox.com/UI/Image.htc);cursor:hand;"></a></div>
+            
+            <span id="_ctl0_ContentPlaceHolder1_User1_Public1_LabelAboutMe">{{ user.about }}</span>
+
+		</td>
+	</tr>
+</tbody></table>
+
+                <br>
+                
+            </td>
+            <td width="60%">
+                
+<table style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid" width="100%" cellspacing="0" cellpadding="6" bgcolor="lightsteelblue">
+	<tbody><tr>
+		<td>
+			<span id="_ctl0_ContentPlaceHolder1_Platform1_Label1" class="Title">room_environment_blue</span>
+			<span id="_ctl0_ContentPlaceHolder1_Platform1_VisitButton">&nbsp;&nbsp;&nbsp;<a id="_ctl0_ContentPlaceHolder1_Platform1_HyperLink1" href="/web/20060622183736/http://roblox.com/Login?ReturnUrl=http%3a%2f%2froblox.com%2fuser.aspx%3fid%3d183">Visit</a></span>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p>
+				<a id="_ctl0_ContentPlaceHolder1_Platform1_ContentImage1" title="room_environment_blue" href="/web/20060622183736/http://roblox.com/Login?ReturnUrl=http%3a%2f%2froblox.com%2fuser.aspx%3fid%3d183" style="display:inline-block;cursor:hand;"><img src="./Thumbs/Level.ashx.alternative.jpg" border="0"></a></p>
+			<div id="_ctl0_ContentPlaceHolder1_Platform1_PanelDescription">
+	
+				<span id="_ctl0_ContentPlaceHolder1_Platform1_LabelDescription"></span>
+			
+</div>
+		</td>
+	</tr>
+</tbody></table>
+<script>
+	if (!isIDE())
+	{
+	    var e = document.getElementById("_ctl0_ContentPlaceHolder1_Platform1_EditButton");
+		if (e)
+		    e.style.display = 'none';
+	}
+</script>
+
+            </td>
+        </tr>
+	</tbody></table>
+	{% endblock %}

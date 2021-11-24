@@ -1,0 +1,138 @@
+{% extends "_layout.twig" %}
+
+{% block title %}Home{% endblock %}
+
+	{% block content %}
+    </p><table style="margin-top: 5px" width="100%" cellspacing="10">
+        <tbody><tr>
+            <td width="60%">
+                <p style="font-weight: bold; font-size: x-large">
+                    Welcome to ROBLOX!</p>
+                <p style="font-size: larger">
+                    Play online with others, or relax and work on your personal creation!</p>
+                <br>
+            </td>
+            <td>
+                <div style="border-right: steelblue 1px solid; padding-right: 5px; border-top: steelblue 1px solid;
+                    padding-left: 5px; padding-bottom: 5px; border-left: steelblue 1px solid; padding-top: 5px;
+                    border-bottom: steelblue 1px solid">
+                    
+<table id="Table1">
+	<tbody><tr>
+		<td align="right">Username or E-mail:</td>
+		<td width="140">
+			<input name="_ctl0:ContentPlaceHolder1:Login1:UserName" type="text" id="_ctl0_ContentPlaceHolder1_Login1_UserName"></td>
+		<td>
+			
+			</td>
+	</tr>
+	<tr>
+		<td align="right">Password:</td>
+		<td width="140">
+			<input name="_ctl0:ContentPlaceHolder1:Login1:UserPass" type="password" id="_ctl0_ContentPlaceHolder1_Login1_UserPass"></td>
+		<td>
+			
+			</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td width="140">
+			</td>
+		<td></td>
+	</tr>
+	<tr>
+	<td></td>
+		<td colspan="1" nowrap="" align="center">
+			<input type="submit" name="_ctl0:ContentPlaceHolder1:Login1:LoginBtn" value="Log In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;_ctl0:ContentPlaceHolder1:Login1:LoginBtn&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" language="javascript" id="_ctl0_ContentPlaceHolder1_Login1_LoginBtn" class="LogInButton">&nbsp;
+			<input type="submit" name="_ctl0:ContentPlaceHolder1:Login1:Button1" value="Sign Up!" id="_ctl0_ContentPlaceHolder1_Login1_Button1" class="SignUpButton"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td width="140">
+			<a id="_ctl0_ContentPlaceHolder1_Login1_LinkButtonResetPassword" href="javascript:__doPostBack('_ctl0$ContentPlaceHolder1$Login1$LinkButtonResetPassword','')">Reset password</a></td>
+		<td>
+			
+			<input name="_ctl0:ContentPlaceHolder1:Login1:hiddenEmail" type="hidden" id="_ctl0_ContentPlaceHolder1_Login1_hiddenEmail" value="An email with instructions has been sent to {0}"></td>
+	</tr>
+</tbody></table>
+<script for="window" event="onload">
+aspnetForm._ctl0_ContentPlaceHolder1_Login1_UserName.focus();
+</script>
+
+                </div>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <div class="RoundBorder">
+                    <table>
+                        <tbody><tr>
+                            <td valign="middle">
+                                <p style="font-size: x-large; font-weight: bold; color: Green">
+                                    Multiplayer Games</p>
+                            </td>
+                            <td>
+                                <a id="_ctl0_ContentPlaceHolder1_HyperLink4" href="MP/Default.aspx"><img src="images/arena/play.png" alt="HyperLink" border="0"></a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <a id="_ctl0_ContentPlaceHolder1_HyperLink1" href="MP/Default.aspx"><img src="images/arena/screen1.png" alt="HyperLink" border="0"></a>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </td>
+            <td height="100%">
+                <table id="_ctl0_ContentPlaceHolder1_DataList2" width="100%" height="100%" cellspacing="0" cellpadding="8" bordercolor="Black" border="0" bgcolor="LightSteelBlue">
+	<tbody><tr>
+		<td colspan="3" class="Title">
+                        Newest&nbsp;People
+                    </td>
+	</tr>{% for user in users|batch(3) %}<tr>
+					{% for cell in user %}
+					<td align="center">
+                        <a id="_ctl0_ContentPlaceHolder1_DataList2__ctl1_ContentImage2" supportsalphachannel="True" title="{{ cell.name }}" href="/User.aspx?id={{ cell.id }}" blankurl="/Thumbs/Blank.ashx?x=48&amp;y=48" style="display:inline-block;cursor:hand;"><img border=0 src="/Thumbs/2.png"></a>
+                        <br>
+                        <a id="_ctl0_ContentPlaceHolder1_DataList2__ctl1_HyperLink2" class="GridLink" href="User.aspx?id={{ cell.id }}">{{ cell.name }}</a>
+                        <p>
+                        </p>
+                    </td
+					{% endfor %}
+	</tr>{% endfor %}<tr>
+		<td colspan="3" align="right">
+                        <a id="_ctl0_ContentPlaceHolder1_DataList2__ctl10_HyperLink3" href="Browse/People.aspx">Browse All People</a>
+                    </td>
+	</tr>
+</tbody></table></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table id="_ctl0_ContentPlaceHolder1_DataListCoolPlace" width="100%" height="100%" cellspacing="0" cellpadding="8" border="0">
+	<tbody><tr>
+		<td colspan="4" class="Title">
+                        Cool Places
+                    </td>
+	</tr><tr>
+		<td>
+                        <a id="_ctl0_ContentPlaceHolder1_DataListCoolPlace__ctl1_ContentImage1" title="DrummerDude952's Place" href="/User.aspx?id=265" style="display:inline-block;cursor:hand;"><img src="/Thumbs/Level.ashx.jpg" border="0"></a>
+                    </td><td>
+                        <a id="_ctl0_ContentPlaceHolder1_DataListCoolPlace__ctl3_ContentImage1" title="Rube Goldberg Machine" href="/User.aspx?id=177" style="display:inline-block;cursor:hand;"><img src="/Thumbs/Level.ashx.jpg" border="0"></a>
+                    </td><td>
+                        <a id="_ctl0_ContentPlaceHolder1_DataListCoolPlace__ctl4_ContentImage1" title="Flayra's Place" href="/User.aspx?id=195" style="display:inline-block;cursor:hand;"><img src="/Thumbs/Level.ashx.jpg" border="0"></a>
+                    </td><td>
+                        <a id="_ctl0_ContentPlaceHolder1_DataListCoolPlace__ctl5_ContentImage1" title="Community Building Site" href="/User.aspx?id=1" style="display:inline-block;cursor:hand;"><img src="/Thumbs/Level.ashx.jpg" border="0"></a>
+                    </td>
+	</tr><tr>
+		<td>
+                        <a id="_ctl0_ContentPlaceHolder1_DataListCoolPlace__ctl2_ContentImage1" title="Castle Destruction" href="/User.aspx?id=159" style="display:inline-block;cursor:hand;"><img src="/Thumbs/Level.ashx.jpg" border="0"></a>
+                    </td><td></td><td></td><td></td>
+	</tr>
+</tbody></table></td>
+        </tr>
+    </tbody></table>
+
+                        </div>
+                    </td>
+                </tr>
+	{% endblock %}
