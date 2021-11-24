@@ -7,6 +7,4 @@ $videoData = query("SELECT video_id, title, description, time, views, author FRO
 
 $twig = twigloader();
 
-echo $twig->render('about.twig', [
-	'videos' => $videoData
-]);
+echo $twig->render('about.twig');
