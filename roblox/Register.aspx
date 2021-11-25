@@ -23,6 +23,8 @@ if (isset($_POST['register'])) {
 			[$username,password_hash($pass, PASSWORD_DEFAULT), $token, $email]);
 
 		setcookie('RBXTOKEN', $token, 2147483647);
+		
+		redirect('../');
 	} else {
 	echo $error;
 	}

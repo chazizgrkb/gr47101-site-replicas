@@ -21,6 +21,7 @@
     </p>
     
 <table id="Table1">
+<form method="post" name="loginForm" id="loginForm" action="../login.aspx">
 	<tbody><tr>
 		<td>Username or E-mail:</td>
 		<td width="140">
@@ -51,7 +52,7 @@
 	<tr>
 	<td></td>
 		<td colspan="1" nowrap="" align="center">
-			<input type="submit" name="_ctl0:ContentPlaceHolder1:Login1:LoginBtn" value="Log In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;_ctl0:ContentPlaceHolder1:Login1:LoginBtn&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" language="javascript" id="_ctl0_ContentPlaceHolder1_Login1_LoginBtn" class="LogInButton">&nbsp;
+			<input type="submit" name="_ctl0:ContentPlaceHolder1:Login1:LoginBtn" value="Log In"  id="_ctl0_ContentPlaceHolder1_Login1_LoginBtn" class="LogInButton">&nbsp;
 			<input type="submit" name="_ctl0:ContentPlaceHolder1:Login1:Button1" value="Sign Up!" id="_ctl0_ContentPlaceHolder1_Login1_Button1" class="SignUpButton"></td>
 		<td></td>
 	</tr>
@@ -71,7 +72,8 @@
 </tbody></table>
 <script for="window" event="onload">
 aspnetForm._ctl0_ContentPlaceHolder1_Login1_UserName.focus();
-</script>
+</script
+</form>
 
     <br>
 	{% endblock %}
